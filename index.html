@@ -57,7 +57,16 @@
         <section class="section hero">
             <div class="decision container">
                 <h1 class="decision-main">Эффективные решения <br /> для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button data-modal-open type="button" class="button">Заказать услугу</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close type="button" class="modal-close">
+                        <svg class="close" width="30" height="30">
+                            <use class="close-round" href="./images/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -115,15 +124,19 @@
             <div class="container">
                 <h2>Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li>
+                    <li class="direction-list">
                         <img class="list-img" src="./images/web.jpg" alt="Разработка Веб-приложений" width="370">
+
+                        <h3 class=directions-description>Десктопные приложения</h3>
                     </li>
-                    <li>
+                    <li class="direction-list">
                         <img class="list-img" src="./images/mob.jpg" alt="Разработка мобильных приложений" width="370">
+                        <h3 class=directions-description>Мобильные приложения</h3>
                     </li>
-                    <li>
+                    <li class="direction-list">
                         <img class="list-img" src="./images/design.jpg" alt="Разработка дизайнов для приложений"
                             width="370">
+                        <h3 class=directions-description>Дизайнерские решения</h3>
                     </li>
                 </ul>
             </div>
@@ -394,6 +407,7 @@
             </div>
         </div>
     </footer>
+    <script defer src="./js/modal.js"></script>
 </body>
 
 </html>
